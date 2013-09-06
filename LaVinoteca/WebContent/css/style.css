@@ -1,0 +1,64 @@
+#botonera a {
+	padding-left: 25px;
+}
+
+#buscador {
+	bottom:0px;
+	font-size: 1.6em;
+	line-height: 90px;
+	vertical-align: bottom;
+	text-align:  right;
+}
+
+#botonera {
+	text-align : left;
+}
+
+#page-header {
+	background : url(../img/portada-vino.png) no-repeat;
+	background-position:center; 
+}
+
+#barra-buscador input {
+    height: 30px;
+    line-height: 30px;
+}
+#words {
+    background: url(../img/search.png) no-repeat right #FFFFFF;
+}
+.enviar-carrito {
+	background : url(../img/plus.png) no-repeat #FFF;
+	border : 0px;
+	width : 25px;
+}
+article {
+	margin-bottom : 25px;
+}
+.botones-enviar-carrito {
+	margin-top : 10px;
+}
+/*
+#tinto {
+	background-color : #50404D;
+	font-weight: bold;
+}
+/*
+#blanco {
+	background-color : #F7E7CE;
+    font-weight: bold;
+}
+#rosado {
+	background-color : #987381;
+    font-weight: bold;	
+}
+#tinto:hover {
+	text-decoration: underline #50404D;
+	
+}
+/*
+Colores:
+borgoña - #50404D
+blanco - #F7E7CE
+rosado - #987381
+
+*/
