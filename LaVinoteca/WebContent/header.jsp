@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE HTML>
 <html lang="es-ES">
 <head>
@@ -21,11 +21,14 @@
 				</div>
 				<div id="selector-vino" class="col-md-3">
 					<nav class="row">
-						<ul class="col-md-4" id="tinto"><a href="#">Tinto</a>
+						<ul class="col-md-4" id="tinto">
+							<a href="#">Tinto</a>
 						</ul>
-						<ul class="col-md-4" id="blanco"><a href="#"> Blanco</a>
+						<ul class="col-md-4" id="blanco">
+							<a href="#"> Blanco</a>
 						</ul>
-						<ul class="col-md-4" id="rosado"><a href="#">Rosado</a>
+						<ul class="col-md-4" id="rosado">
+							<a href="#">Rosado</a>
 						</ul>
 					</nav>
 				</div>
@@ -33,24 +36,23 @@
 			<div class="row" id="barra-buscador">
 				<div class="col-md-8" id="buscador">
 					<form name="search" action="#" method="get">
-					
-					<select>
-					    <option value="todo"> Todo </option>
-					    <option value="anyocosecha"> A&ntilde;o de cosecha </option>
-					    <option value="bodega">Bodega</option>  
-						<optgroup label="Categoria"> 
-						    <option value="cosecha">Cosecha</option> 
-						    <option value="crianza">Crianza</option>  
-						    <option value="reserva">Reserva</option>  
-						    <option value="granreserva">Gran Reserva</option>  
-						</optgroup>  
-						<optgroup label="Tipo">  
-						    <option value="tinto">Tinto</option>  
-						    <option value="blanco">Blanco</option>  
-						    <option value="rosado">Rosado</option>  
-						</optgroup>  
-					</select> 
-					<input type="text" name="words" size="40"> <input
+
+						<select>
+							<option value="todo">Todo</option>
+							<option value="anyocosecha">A&ntilde;o de cosecha</option>
+							<option value="bodega">Bodega</option>
+							<optgroup label="Categoria">
+								<option value="cosecha">Cosecha</option>
+								<option value="crianza">Crianza</option>
+								<option value="reserva">Reserva</option>
+								<option value="granreserva">Gran Reserva</option>
+							</optgroup>
+							<optgroup label="Tipo">
+								<option value="tinto">Tinto</option>
+								<option value="blanco">Blanco</option>
+								<option value="rosado">Rosado</option>
+							</optgroup>
+						</select> <input type="text" name="words" size="40"> <input
 							type="submit" value="Submit">
 					</form>
 				</div>

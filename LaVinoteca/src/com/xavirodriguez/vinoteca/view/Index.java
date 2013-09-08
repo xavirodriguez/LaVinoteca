@@ -1,4 +1,4 @@
-package com.xavirodriguez.vinoteca.main;
+package com.xavirodriguez.vinoteca.view;
 
 import java.io.IOException;
 
