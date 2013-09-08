@@ -6,7 +6,9 @@ public class UsuarioServiceImpl implements IUsuarioService{
 
 	@Override
 	public void agregarUsuario(Usuario usuario) throws Exception {
-		// TODO Auto-generated method stub
+		// TO-DO PERSISTIR EN BASE DE DATOS
+		System.out.println(usuario.toString());
+		
 		
 	}
 

@@ -43,7 +43,7 @@ public class CAuth extends HttpServlet {
 		IUsuarioService userService = UsuarioServiceFactory.createUsuarioService();
 		try {
 			if(userService.autenticarUsuario(usuario, password) != null) {
-
+// TO-DO crear sesion
 				getServletContext().getRequestDispatcher("/header.jsp").include(request, response);
 				
 				getServletContext().getRequestDispatcher("/message.jsp").include(request, response);

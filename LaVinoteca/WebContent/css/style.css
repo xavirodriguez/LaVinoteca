@@ -41,6 +41,56 @@ article {
 .botones-enviar-carrito {
 	margin-top: 10px;
 }
+#buscar {
+	font-size: 0.7em;
+    height: 32px;
+    width : 124px;
+	background : #FFF;
+	border : 1px solid;
+	border-radius : 10px;
+	 box-shadow: 2px #ffc;
+	 border: solid 1px #bcbbbb;
+	 box-shadow: inset 0 1px 2px;
+	 -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+
+}
+#parametro {
+	font-size: 0.7em;
+height: 32px;
+    border-radius : 10px;
+	   border-radius : 10px;
+     box-shadow: 2px #ffc;
+     border: solid 1px #bcbbbb;
+     box-shadow: inset 0 1px 2px;
+     -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	
+}
+#busca {
+	font-size: 0.7em;
+height: 32px;
+    border-radius : 10px;
+     box-shadow: 2px #ffc;
+     border: solid 1px #bcbbbb;
+     box-shadow: inset 0 1px 2px;
+     -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+padding: 6px 6px 6px 8px;	
+}
+* {
+	font-family: 'Raleway';
+}
+#h1-principal {
+	font-family: 'Arizonia';
+	font-size: 5em;
+}
+#botonera {
+	background: #FFF;
+border-radius: 25px;
+opacity: 0.6;
+height: 76px;
+}
 /*
 #tinto {
 	background-color : #50404D;

@@ -5,18 +5,66 @@ public class Usuario {
 	private String password;
 	private String nombre;
 	private String apellidos;
-	private String DNI;
+	private String dni;
 	private String naciento;
 	private Integer telefonoFijo;
 	private Integer telefonoPrincipal;
 	private String direccion;
+	private String ciudad;
+	private String pais;
+	private Integer sexo;
 	private Boolean activo;
-
 
 	public Usuario(String email, String password) {
 		super();
 		this.email = email;
 		this.setPassword(password);
+	}
+	
+	public Usuario(String email, String password, String nombre,
+			String apellidos, String dni, String naciento,
+			Integer telefonoFijo, Integer telefonoPrincipal, String direccion,
+			String ciudad, String pais, Integer sexo, Boolean activo) {
+		super();
+		this.email = email;
+		this.password = password;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.setDni(dni);
+		this.naciento = naciento;
+		this.telefonoFijo = telefonoFijo;
+		this.telefonoPrincipal = telefonoPrincipal;
+		this.direccion = direccion;
+		this.ciudad = ciudad;
+		this.pais = pais;
+		this.sexo = sexo;
+		this.activo = activo;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [email=" + email + ", password=" + password
+				+ ", nombre=" + nombre + ", apellidos=" + apellidos + ", dni="
+				+ dni + ", naciento=" + naciento + ", telefonoFijo="
+				+ telefonoFijo + ", telefonoPrincipal=" + telefonoPrincipal
+				+ ", direccion=" + direccion + ", ciudad=" + ciudad + ", pais="
+				+ pais + ", sexo=" + sexo + ", activo=" + activo + "]";
+	}
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+
+	public String getPais() {
+		return pais;
+	}
+
+	public void setPais(String pais) {
+		this.pais = pais;
 	}
 
 	public String getEmail() {
@@ -41,14 +89,6 @@ public class Usuario {
 
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
-	}
-
-	public String getDNI() {
-		return DNI;
-	}
-
-	public void setDNI(String dNI) {
-		DNI = dNI;
 	}
 
 	public String getNaciento() {
@@ -97,6 +137,22 @@ public class Usuario {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public Integer getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(Integer sexo) {
+		this.sexo = sexo;
+	}
+
+	public String getDni() {
+		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
 	}
 	
 	

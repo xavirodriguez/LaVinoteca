@@ -4,4 +4,9 @@ $( document ).ready(function() {
         max: 20,
         step: 1
     });
+    
+    $('.login').hide();
+    $('#acceso').click(function () {
+    		$('.login').show(1000);	
+    });
   });

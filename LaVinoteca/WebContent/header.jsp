@@ -5,8 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>La Vinoteca</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />
+<link href="http://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css"/>
 <script src="js/jquery-1.9.1.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/vinoteca.js"></script>
@@ -31,13 +34,27 @@
 							<a href="#">Rosado</a>
 						</ul>
 					</nav>
+					
+					<div class="login">
+					  <form method="post" id="formulario" action="auth">
+						<div class="col-md-6">
+						    <p><label for="usuario">Usuario</label></p>
+						    <p><label for="password">Constraseña</label></p>
+						</div>
+						<div class="col-md-6">
+						    <p><input type="text" size="20" name="usuario" id="usuario" /></p>
+						    <p><input type="text" size="20" name="password" id="password" /></p>
+						    <p><input type="submit" value="enviar" /></p>
+						</div>
+						</form>
+					</div>
 				</div>
 			</div>
 			<div class="row" id="barra-buscador">
-				<div class="col-md-8" id="buscador">
+				<div class="col-md-7" id="buscador">
 					<form name="search" action="#" method="get">
 
-						<select>
+						<select id="parametro" name="parametro">
 							<option value="todo">Todo</option>
 							<option value="anyocosecha">A&ntilde;o de cosecha</option>
 							<option value="bodega">Bodega</option>
@@ -52,14 +69,15 @@
 								<option value="blanco">Blanco</option>
 								<option value="rosado">Rosado</option>
 							</optgroup>
-						</select> <input type="text" name="words" size="40"> <input
-							type="submit" value="Submit">
+						</select> <input type="text" name="words" size="40" id="busca" name="busca"> <input
+							type="submit" value="Buscar" id="buscar">
 					</form>
 				</div>
-				<div class="col-md-4" id="botonera">
-					<a href="#"> <img src="img/cart.png" alt="carrito" /></a> <a
-						href="#"> <img src="img/lock.png" alt="acceso usuarios" /></a> <a
-						href="#"> <img src="img/comments.png" alt="contacta" /></a>
+				<div class="col-md-5" id="botonera">
+					<a href="#"> <img src="img/cart.png" alt="carrito" /></a> 
+					<a id="acceso" href="#"> <img src="img/unlock.png" alt="acceso usuarios" /></a>
+                    <a href="Registro"> <img src="img/account.png" alt="nuevo usuario" /></a>
+					<a href="#"> <img src="img/comments.png" alt="contacta" /></a>
 				</div>
 			</div>
 		</header>
