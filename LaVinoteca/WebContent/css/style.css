@@ -41,6 +41,9 @@ article {
 .botones-enviar-carrito {
 	margin-top: 10px;
 }
+.cantidad-productos {
+	height: 20px;  
+}
 #buscar {
 	font-size: 0.7em;
     height: 32px;
@@ -69,14 +72,14 @@ height: 32px;
 }
 #busca {
 	font-size: 0.7em;
-height: 32px;
+    height: 32px;
     border-radius : 10px;
-     box-shadow: 2px #ffc;
-     border: solid 1px #bcbbbb;
-     box-shadow: inset 0 1px 2px;
-     -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
--webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-padding: 6px 6px 6px 8px;	
+    box-shadow: 2px #ffc;
+    border: solid 1px #bcbbbb;
+    box-shadow: inset 0 1px 2px;
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	padding: 6px 6px 6px 8px;	
 }
 * {
 	font-family: 'Raleway';
@@ -88,8 +91,25 @@ padding: 6px 6px 6px 8px;
 #botonera {
 	background: #FFF;
 border-radius: 25px;
-opacity: 0.6;
+opacity: 0.8;
 height: 76px;
+}
+.boton-enviar {
+	display : inline;
+	vertical-align : bottom;
+}
+.fondo-rojo{
+	background: #CC0000;
+	height: 3em;
+	padding: 0.8em;
+	border-radius: 15px;
+	font-weight: bold;
+}
+.fondo-verde {
+	background: #73D216;
+	height: 3em;
+	padding: 0.8em;
+	border-radius: 15px;
 }
 /*
 #tinto {

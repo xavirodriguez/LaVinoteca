@@ -47,8 +47,12 @@ public class CRegistrar extends HttpServlet {
 		//recorrer request en busca de nulos if null, error
 		Enumeration<String> atributos = request.getAttributeNames();
 		List<String> iAtributos = null;
-		for(String atr : iAtributos) {
-			
+		
+		while(atributos.hasMoreElements()) {
+			String atributo = atributos.nextElement();
+			if (request.getParameter(atributo) == null) {
+				// ERROR Atributo vacio
+			}
 		}
 		
 		// Comprobar que los emails y contraseñas son iguales

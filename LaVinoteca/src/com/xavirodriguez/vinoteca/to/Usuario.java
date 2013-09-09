@@ -18,7 +18,7 @@ public class Usuario {
 	public Usuario(String email, String password) {
 		super();
 		this.email = email;
-		this.setPassword(password);
+		this.password = password;
 	}
 	
 	public Usuario(String email, String password, String nombre,

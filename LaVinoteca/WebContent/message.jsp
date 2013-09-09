@@ -1,3 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<p>Mensaje: </p>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<div class="fondo-${requestScope.color}">
+    <p>${requestScope.mensaje}</p>
+</div>

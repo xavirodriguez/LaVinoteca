@@ -15,10 +15,12 @@ public class UsuarioServiceImpl implements IUsuarioService{
 	@Override
 	public Usuario autenticarUsuario(String usuario, String password)
 			throws Exception {
-		 	if((usuario == "user") && (password=="pass")) {
+		 	if((usuario.equals("user")) && (password.equals("pass"))) {
 		 		return new Usuario(usuario, password);
 		 	}
-			return null;
+		 	else {
+		 		return null;
+		 	}
 	}
 
 }

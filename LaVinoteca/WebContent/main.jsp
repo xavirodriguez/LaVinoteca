@@ -11,14 +11,18 @@
 							<img src="${newVino.imagen}" alt="wine-bottle" height="150" />
 						</div>
 						<div class="botones-enviar-carrito">
-							<form action="#">
-								<input type="hidden" value="${topVino.id}" /> <input
-									name="cantidad" size="2" class="spinner" /> <input
-									type="submit" class="enviar-carrito" value="" />
+							<form action="Agregar">
+
+								<input type="hidden" value="${topVino.id}" name="id" id="id" /> 
+								<input	name="cantidad" size="2" class="spinner cantidad-productos" />
+								
+								<div class="boton-enviar">
+								    <input	type="submit" class="enviar-carrito" value="" />
+                                </div>
 							</form>
 						</div>
-
 					</div>
+					
 					<div class="col-md-9">
 						<p>${newVino.descripcion}</p>
 
@@ -40,9 +44,9 @@
 						</div>
 
 						<div class="botones-enviar-carrito">
-							<form action="#">
+							<form action="Agregar">
 								<input type="hidden" value="${topVino.id}" /> <input
-									name="cantidad" size="2" class="spinner" /> <input
+									name="cantidad" size="2" class="spinner cantidad-productos" /> <input
 									type="submit" class="enviar-carrito" value="" />
 							</form>
 						</div>
